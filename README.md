@@ -5,7 +5,7 @@ The script converts the output tag of emMorph morphological analyzer to the corr
 # What's in this repo?
 
 * the main script of the converter: `converter.py`
-* three auxiliary scripts in folder `converterdata`
+* auxiliary files in folder `converterdata`
 * full list of emMorph tags in folder `tagsets` TODO
 * a table of CoNLL tags in folder `tagsets` TODO
 * license

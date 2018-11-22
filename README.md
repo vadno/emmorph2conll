@@ -17,7 +17,7 @@ The script converts the output tag of emMorph morphological analyzer to the corr
 
 [emMorph](https://github.com/dlt-rilmta/emMorph) is the current morphological analyzer for Hungarian and it is integrated into the [e-magyar](http://e-magyar.hu/en) language processing toolchain. The list of emMorph tags is from [here](http://e-magyar.hu/en/textmodules/emmorph_codelist).
 
-## MSD
+## CoNLL
 
 What we call here CoNLL is a modified version of the morphosyntactic tagset of [MULTEXT](http://nl.ijs.si/ME/Vault/V3/msd/msd.pdf) transformed into a feature-value pair structure. This modified tagset is an annotation scheme for a version of the largest fully manually annotated corpus of Hungarian, [Szeged Treebank](http://rgai.inf.u-szeged.hu/index.php?lang=en&page=SzegedTreebank).
 

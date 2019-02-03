@@ -2,9 +2,9 @@
 # coding=utf-8
 
 import sys
-import mappings as cd
-import lex_lists as ls
-import print_conll as pr
+from converterdata import mappings as cd
+from converterdata import lex_lists as ls
+from converterdata import print_conll as pr
 
 
 def feats_to_dict(conllfeature, conllfeature_dict):

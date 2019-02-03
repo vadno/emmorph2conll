@@ -2,6 +2,7 @@
 # coding=utf-8
 
 import sys
+import codecs
 from converterdata import mappings as cd
 from converterdata import lex_lists as ls
 from converterdata import print_conll as pr
@@ -152,7 +153,16 @@ def parse(token, lemma, emmorph):
 
 def main():
 
+    # a lentiek híján nem tud utf8-at olvasni bemenetként; téves konverzió az eredménye
+    sys.stderr = codecs.getwriter('UTF-8')(sys.stderr.buffer)
+    sys.stdout = codecs.getwriter('UTF-8')(sys.stdout.buffer)
+    sys.stdin = codecs.getreader('UTF-8')(sys.stdin.buffer)
+
     for line in sys.stdin:
+        if line.strip() == '':
+            print('')
+            continue
+
         token, lemma, elemzes = line.strip().split('\t')[:3]
         conllpos, subpos, conllfeature_dict = parse(token, lemma, elemzes)
 
